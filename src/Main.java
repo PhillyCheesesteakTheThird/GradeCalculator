@@ -8,7 +8,9 @@ public class Main {
         object.gradeRunner();
     }
     private synchronized void gradeRunner() {
-        //While loop always returns true, as I use a true literal as its condition(not sure if I'm using literal correctly)
+        //While loop always returns true, as I use a true literal as its condition
+        //(not sure if I'm using literal correctly)
+        //Program will continue running indefinitely until killed by user
         while(true) {
             //Initializes new response object of class scanner to listen for user responses
             Scanner response = new Scanner(System.in);
@@ -19,6 +21,7 @@ public class Main {
             System.out.println("Your grade is: " + gradeMachine(gradeIn) + "\n");
             try{
                 //Wait time before prompting user for next grade value
+                //Thread is in a "wait" state during this time
                 this.wait(200);
 
                 //Basic error handling
