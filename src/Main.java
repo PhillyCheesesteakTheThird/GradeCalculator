@@ -16,7 +16,7 @@ public class Main {
             //Initalizes user input variable as a double, to account for decimal values
             double gradeIn = response.nextDouble();
             //Invokes gradeMachine
-            System.out.println("Your grade is: " + gradeMachine(gradeIn));
+            System.out.println("Your grade is: " + gradeMachine(gradeIn) + "\n");
             try{
                 //Wait time before prompting user for next grade value
                 this.wait(200);
@@ -37,7 +37,6 @@ public class Main {
         if ((gradeIn > 100)) {
             gradeOut = "Too high to be calculated :). Gold star for you ☆";
         }
-
         else if ((gradeIn > 92)) {
             gradeOut = "A";
         }
