@@ -30,9 +30,9 @@ public class Main {
     }
     public static String gradeMachine(double gradeIn) {
         //Kind of a silly brute-force way to do it, but it works!
-        //If value is equal to the excluded value in the grade range, it is considered
-        //to be the next lowest grade. I.E. as 92 is the cutoff for an A grade,
-        //inputting that value would return an A-
+        //If value is equal to the excluded value in the grade range,
+        //it is considered to be the next lowest grade.
+        //I.E. as 92 is the cutoff for an A grade, inputting that value would return an A-
         String gradeOut = null;
         if ((gradeIn > 100)) {
             gradeOut = "Too high to be calculated :). Gold star for you ☆";
