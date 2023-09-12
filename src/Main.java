@@ -10,10 +10,10 @@ public class Main {
     private synchronized void gradeRunner() {
         //While loop always returns true, as I use a true literal as its condition(not sure if I'm using literal correctly)
         while(true) {
-            //Initalizes new response object of class scanner to listen for user responses
+            //Initializes new response object of class scanner to listen for user responses
             Scanner response = new Scanner(System.in);
             System.out.println("Please enter your grade: ");
-            //Initalizes user input variable as a double, to account for decimal values
+            //Initializes user input variable as a double, to account for decimal values
             double gradeIn = response.nextDouble();
             //Invokes gradeMachine
             System.out.println("Your grade is: " + gradeMachine(gradeIn) + "\n");
