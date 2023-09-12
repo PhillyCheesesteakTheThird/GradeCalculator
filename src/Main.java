@@ -7,7 +7,7 @@ public class Main {
         //Runs the gradeRunner method of Main
         object.gradeRunner();
     }
-    private synchronized void gradeRunner() {
+    public synchronized void gradeRunner() {
         //While loop always returns true, as I use a true literal as its condition
         //(not sure if I'm using literal correctly)
         //Program will continue running indefinitely until killed by user
