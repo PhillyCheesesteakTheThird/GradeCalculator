@@ -36,6 +36,9 @@ public class Main {
         //If value is equal to the excluded value in the grade range,
         //it is considered to be the next lowest grade.
         //I.E. as 92 is the cutoff for an A grade, inputting that value would return an A-
+
+        //Just in case some magic value satisfies none of the if statements,
+        //when gradeOut is returned it will simply be null, not undefined(java probably wouldn't like that)
         String gradeOut = null;
         if ((gradeIn > 100)) {
             gradeOut = "Too high to be calculated :). Gold star for you ☆";
